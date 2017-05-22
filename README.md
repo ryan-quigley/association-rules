@@ -1,5 +1,10 @@
 # Association Rules
+
 Code for MATH 269 association rules instructional presentation
+
+Grocery example dashboard shown during presentation (image links to html page).
+[![Grocery Dashboard](dash_screenshot.png)](https://ryan-quigley.github.io/association-rules/dash_ar.html)
+
 
 ### Getting Started
 
