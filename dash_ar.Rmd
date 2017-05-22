@@ -55,7 +55,7 @@ itemFrequencyPlot(Groceries, support = 0.05, cex.names=0.6,
 Rules {data-icon="fa-filter"}
 =====================================  
 
-Col
+Col {data-width=750}
 -------------------------------------
 
 ### Table
@@ -87,7 +87,7 @@ plotly_arules(rules)
 
 ### Order based
 
-```{r}
+```{r fig.width=6, fig.height=4}
 plot(rules, shading="order", control=list(main = "Two-key plot"))
 ```
 
@@ -96,11 +96,11 @@ Lift Graph {data-icon="fa-chevron-up"}
 
 ### Top 10 by Lift
 
-```{r}
+```{r fig.width=10, fig.height=10}
 subrules <- head(sort(rules, by="lift"), 10)
-p <- plot(subrules, method="graph", control = list(cex = 0.6, 
+p <- plot(subrules, method="graph", control = list(cex = 0.8, 
                                                    precision = 3, 
-                                                   arrowSize = 0.2, 
+                                                   arrowSize = 0.4, 
                                                    main = "Graph for Top 10 Rules by Lift"))
 ```
 
