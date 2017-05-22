@@ -1,0 +1,17 @@
+body {
+  background: #D2D2D2
+}
+.navbar {
+  font-family:"SJSUSpartanLight";
+}
+.storyboard-nav .sbframelist ul li.active {
+  background-color: #939597;
+  border: 1px solid #E5A823;
+}
+.sbframe-commentary {
+  background-color: #ffffff;
+}
+.navbar-inverse {
+  background-color: #0055A2;
+  border-color: #E5A823;
+}

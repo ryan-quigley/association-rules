@@ -1,0 +1,106 @@
+---
+title: "Association Rules"
+output: 
+  flexdashboard::flex_dashboard:
+    source_code: "https://github.com/ryan-quigley/association-rules"
+    logo: mathstat_logo.png
+    favicon: favicon.ico
+    css: styles.css
+---
+
+
+```{r, include=FALSE, cache=FALSE}
+library(flexdashboard)
+library(Matrix)
+library(arulesViz)
+library(arules)
+library(plotly)
+library(recommenderlab)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, include = FALSE, cache = TRUE}
+data("Groceries")
+rules <- apriori(Groceries, parameter=list(support=0.001, confidence=0.5))
+```
+
+
+Transactions {data-orientation=rows data-icon="fa-shopping-basket"}
+=====================================
+
+### Sparse Matrix
+
+```{r}
+wm <- which(Groceries@itemInfo$labels == "whole milk")
+soda <- which(Groceries@itemInfo$labels == "soda")
+idx <- match(unique(Groceries@itemInfo$level1), Groceries@itemInfo$level1)
+image(sample(Groceries, dim(Groceries)[2], replace = FALSE), 
+      main = "Sample of Grocery Transactions", xlab = "High-level Regions", 
+      scales = list(x = list(at = idx, 
+                             labels = paste(unique(Groceries@itemInfo$level1), "-", idx), 
+                             rot = 35, cex = 0.6), 
+                    y = list(draw = FALSE)))
+```
+
+> Whole Milk Index: `r wm`; Soda Index: `r soda`
+
+### Frequent Items
+
+```{r}
+itemFrequencyPlot(Groceries, support = 0.05, cex.names=0.6, 
+                  main = "Most Frequent Items across Transactions", col = "#0055A2")
+```
+
+
+Rules {data-icon="fa-filter"}
+=====================================  
+
+Col
+-------------------------------------
+
+### Table
+
+```{r}
+lhs.rc <- rowCounts(as(rules@lhs, "binaryRatingMatrix"))
+#rhs.rc <- rowCounts(as(rules@rhs, "binaryRatingMatrix"))
+rules@quality$lhs.order <- lhs.rc
+#rules@quality$rhs.order <- rhs.rc
+
+inspectDT(rules,
+          precision = 4,
+          colnames = c("LHS", "RHS", "Support", "Confidence", "Lift", "LHS Order"), 
+          extensions = 'Buttons', 
+          options = list(pageLength = 25, 
+               dom = 'Bfrtip', 
+               buttons = list(list(extend = 'csv',
+                                   title = 'course_demand_arules_export'))))
+```
+
+Col
+-------------------------------------
+
+### Interactive
+
+```{r}
+plotly_arules(rules)
+```
+
+### Order based
+
+```{r}
+plot(rules, shading="order", control=list(main = "Two-key plot"))
+```
+
+Lift Graph {data-icon="fa-chevron-up"}
+======================================
+
+### Top 10 by Lift
+
+```{r}
+subrules <- head(sort(rules, by="lift"), 10)
+p <- plot(subrules, method="graph", control = list(cex = 0.6, 
+                                                   precision = 3, 
+                                                   arrowSize = 0.2, 
+                                                   main = "Graph for Top 10 Rules by Lift"))
+```
+
