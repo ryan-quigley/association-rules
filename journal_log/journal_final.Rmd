@@ -1,0 +1,1135 @@
+---
+title: "MATH 269 Article Journal Log"
+author: Ryan Quigley
+date: "May 25, 2017"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# To Keep or Not To Keep
+
+All other articles not listed here should be kept in my opinion.
+
+*Aspects of statistical consulting not taught by academia*, Ron S. Kenett and P. Thyregod  
+*P-Value Precision and Reproducibility*, Dennis D. Boos & Leonard A. Stefanski  
+*Figures, statistics and the journalist: an affair between love and fear*, Wormer
+
+# Section 1
+
+## *Some general remarks on consulting statistics*, Cuthbert Daniel
+
+The necessary conditions for a successful client-consultant relationship are:  
+
+1. A *good* problem
+2. A *ready* client
+3. a *favorable* organization
+4. The consultant must be *well prepared*
+
+What makes for a good problem? One that...
+
+- Is important to the client. Major contributions to minor problems are minor contributions in the end.
+- Is clearly formulated ahead of time or can be clearly formulated quickly after meeting with the consultant.
+- Is not necessarily an easy one, and requires expert aid
+- Is within the consultant's area of competence
+- May open new research domains to mathematical statisticians.
+
+Of all the aspects that contribute to a good problem, I believe that clear formulation of the problem is the most important.
+
+**Tips**: 
+- If you understand the problem completely but the client does not, do NOT move forward without the client because you may damage reputations.
+- Never draw out an easy problem that can be solved quickly
+- Don't hide your limitations/shortcomings from the client
+
+## *Statistical Consulting*, Brian L. Joiner
+
+The author opens the article by expressing his view of the statistical consulting relationship as "a more shallow endeavor, something undertaken rather lightly and without great responsibility." In the following paragraph however, he alludes to consulting as a spectrum that varies depending on quality: good consulting is characterized by total involvement. Thus, it is not completely clear where the author stands on the responsibilities of the consultant. That being said, the author does believe consulting is better if the statistical consultant can become involved in the project early to help lay out a plan. This is especially important when it comes to the data collection process.
+
+The examples in the article highlight the wide range of work that statistical consultants contribute to. They work on projects for both the government and the private sector. They work on environmental, industrial, and research problems. They may work with historical data previously collected or they may be expected to develop a thorough plan for end-to-end data collection, storage, processing, and analysis. The consultant also may be expected to keep other colleagues up to date on relevant statistical methods. Consulting may involve more than just data analysis and modelling: it may require investigative work in order to better understand the data. The need for statistics is everywhere, and in each particular case it is important to understand the subject matter as much as possible. 
+
+Historically, innovations in the field of statistics have spawned from the "strong interplay between good statistical theory and application." Consulting work stimulates theoretical pursuits, and theoretical achievements provide consultants with a wealth of dependable methods for all problem types.
+
+Of all the skills needed by a consultant, the following are the top three skills in my opinion:  
+
+1. "Be able to adapt existing statistical procedures to novel environments."
+2. "Be able to identify important problems (and thus avoid spending too much time on projects of little significance)."
+3. "Have the confidence to use as simple a procedure as will get the job done, be it design or analysis."
+
+One of the main problems students have is that they lack the ability to connect what they have learned in class to new problems. They compartmentalize their learning, and struggle to apply their knowledge when the time comes. This is difficult to overcome, but it is necessary to be successful. Thus, it is the most important skill in my opinion. The second skill seems to be related to the famous "error of the third kind" problem. Valuable time and resources can easily be wasted on the wrong problem or a problem with minimal impact. The third skill is a personal favorite of mine because I honestly believe the majority of problems can be solved with a simple approach. Even if a problem cannot be solved perfectly with a simple method, it may darn well be good enough for the client's standards. At the very least, a simple approach is a good place to start to provide a baseline.
+
+Practically all of the skills listed by the author are on the softer side and they are difficult to teach. They are acquired through experience, so it is crucial that students are exposed to real consulting during their statistical training. The quote by Box sums up the problem perfectly, and the authors provides some suggestions for structuring an educational program for student consultants.
+
+The author also provides example scenarios where ethical issues may arise in consulting work. Ethical issues are not an everyday event, but there are a few factors associated with consulting work that tend to give rise to ethical issues: project importance, outcome uncertainty, and client expectations. The right course of action is not always clear, and the consequences faced by the consultant may be severe. Therefore, budding consultants should be vigilant.
+
+## *Aspects of statistical consulting not taught by academia*, Ron S. Kenett and P. Thyregod
+
+Statistical analysis and statistical consulting are not interchangeable terms; they each require specific skills in order to be fully effective.
+
+The need for a consulting class within graduate statistics programs is explained nicely in the following quote,
+
+> "The so-called 'examples' in textbooks and methodological papers serve to illustrate the computations associated with a specific technique rather than the solution of a problem from real life."
+
+I would agree strongly with this point, and it ties back nicely to the listed skill from a previous article that a consultant should be able to apply statistical methods to novel environments.
+
+**Quality Ladder** (different management approaches for industrial organizations):
+
+1. fire fighting - basic statistical understanding
+2. inspection - sampling procedures
+3. process control - control charts
+4. quality by design and strategic management - experimental design
+
+**Consulting roles** (all come with different client expectations)
+1. A pair of hands
+2. The expert
+3. The catalyst, the collaborator, and the coach
+
+**Takeaways**:
+
+* Giving the right answer to the wrong problem is a common pitfall. The problem needs to be well-defined ahead of time.
+* Consulting can be time consuming, although people without statistical training often think it can be conducted informally and swiftly. Misconception: give the statistician a fragmented hint and they will provide expert opinion.
+* Better practice to have the client specify the problem in their own technical terms and have the consultant translate to statistical terms as opposed to the client specifying problem in statistical terms. This can be tricky and sensitive task.
+* Seeing where the data is generated can provide useful context crucial to the problem. Take part in the collection of data or at the very least watch how the data is collected.
+* Clients will often unintentionally avoid explaining certain features because to them it is obvious.
+* Be on guard for sources of VARIATION!
+* Consulting is compared to detective/investigative work.
+* Operators of a process MUST be included in the planning in order to prevent mid-experiment changes and confounded results.
+* Always use the language of the customer.
+* DON'T use presentation slides as a teleprompter.
+
+Example 2.2.1 the automobile part
+- Perfect example of the consultant being willing to use the simplest approach necessary even if it is not statistical
+- Supports the need for traceability when dealing with machines and parts
+
+#### Summary
+
+Consulting is much more than just applying statistical methods,
+
+> "Statistical consulting is a collaborative venture whose success depends essentially on the effectiveness of the communication between the consultant and the client"
+
+
+## *Do we need a public understanding of statistics?*, Fabienne Crettaz von Roten
+
+Approach to public understanding of science:
+
+1. *Deficit model*: one-way, top down
+2. *Engagement model*: dialogue, discussion, debate
+
+**Goals**: develop reasons for PUS, determine sufficiency of statistical coverage, make an argument for the usefulness of statistical literacy
+
+Takeaways:
+
+* The statistical community needs to decide how to deliver science to people (facts, processes, statistics).
+* A significant result does not imply practical importance
+* A significant relationship does not imply causality
+    * Causation should only be assessed after random assignment within a controlled experimental study.
+* Graphs should be read fully and critically
+
+
+Scientific literacy:
+
+1. Practical - to be able to solve practical problems
+2. Civic - to function as a citizen
+3. Cultural - related to major human achievement
+
+Article discussing a questionnaire used to assess civic scientific literacy: [Chapter 12: The Conceptualization and Measurement of Civic Scientific Literacy for the Twenty-First Century](https://www.amacad.org/content/publications/pubContent.aspx?d=1118).
+
+**Statistical literacy**: the ability to understand and critically evaluate statistical results that permeate our daily lives—coupled with the ability to appreciate the contributions that statistical thinking can make in public and private, professional and personal decisions. Statistical literacy suffers from and is hindered by the following:
+
+1. misunderstandings
+2. misperception
+3. mistrust
+4. misgivings
+
+#### Interesting Quotes
+
+> "Information flow on a new scientific issue or technology will be not homogeneous across different social strata: people with higher education tend to acquire this information at a faster rate than those with lower education"
+
+- This is an interesting and daunting phenomenon because the pace of scientific/technological development is so fast these days that it easily be impossible for people with lower education to keep up. This could be problematic because at some point they may fear and completely reject the things that they don't understand which will likely lead to social unrest.
+
+> "Empirical results have found an increase in ambivalence and 'don’t know' responses in surveys of attitudes toward science, and that more knowledge brings more polarized or extreme attitudes toward science"
+
+- Does this mean that people have less knowledge? What would cause more ambivalence? Overwhelming volume and velocity of information 
+
+A question that I think it worth discussing: *do we need math to understand statistics and data*? I believe math is the foundation that makes statistics rigorous, but in many cases it is not necessary to understand the math in order to understand the meaning and the implications. People have an aversion to data (numbers) and statistics because it is math, but I believe this aversion is misguided. As statisticians, it is our responsibility to make statistics approachable and to help increase the public understanding of statistics.
+
+## *Errors of the third kind in statistical consulting*, A. W. Kimball
+
+We are all familiar with type I (first kind) and type II (second kind) errors because we have studied hypothesis testing repeatedly over the years; however, the author claims there is a third kind of error that is also prevalent and troublesome. **Errors of the third kind** occur when the right answer is given to the wrong problem. It is easy to think that any competent person would never commit such an obviously avoidable error, but it is most often due to the fact that the question being asked has little to do with the real problem. It almost always comes down to poor communication; as a result, it is extremely difficult to eradicate this error.
+
+**Client errors**:
+
+* Assume statistician does not have subject matter knowledge
+* Unclear ideas
+* Aversion to being confused further by math mumbo jumbo
+* Believes he has enough statistical understanding
+* Worried about wasting time of statistician
+
+**Consultant errors**:
+
+* lack of background knowledge or dedication to understanding problem context
+* lack of patience
+* lack of persistence (questioning)
+
+In example 1, the statistician was reluctant to dedicate time to learning the context of the problem. The statistician only worked off the problem context as presented by the engineer, and provided a hasty solution to the problem which was not specified correctly. A relatively quick discussion about the data collection process could have easily led the two professionals to the right solution to the real problem. Here the consultant was exhibiting all three consultant errors: lack of background knowledge, lack of patience, lack of persistence (none at all). From this example as well as the third, it would seem that many of these problems could be avoided if statisticians were simply more social and willing to spend some time chit chatting with researchers. Example 2 demonstrates the need for persistence. If a researchers claims the data was "corrected", "standardized", "adjusted" or anything similar, the statistician must dig deeper to understand exactly what was done to the data.
+
+Graduate programs can be overly focused on research when in reality many of the students will go into industry and find that they are inadequately trained to practice statistics in the real world. A class in consulting goes a long way toward preparing new statistics graduates for the difficulties of practicing statistics in the "wild".
+
+## *The questioning statistician*, D. J. Finney
+
+Unfortunately, a statistician is usually brought in at the end of an experiment simply to say significant or not significant; however, the statistician should be involved in all stages of the experiment with the statistician asking questions along the way. The questions should help start a discussion between the researcher and the statistical expert. Discussions should take place over many sessions so that all the important details have time to arise naturally over the course of the conversations.
+
+**The Questions**:
+
+1. Is what you plan truly an experiment?
+    * Non-experimental data (often due to lack of randomness) requires more intense analysis; inference is often much more difficult and problematic.
+1. Why do the experiment?
+    * Four main classes: curiosity, direct interest in comparison, intent to transfer conclusions to different circumstances (often animals $\Rightarrow$ humans), calibrating instruments using subjects (animals/bacteria)
+1. What experimental unit is to be used?
+    * **Definition**: the unit (defined biologically or physically) capable of being differentiated for treatment. This must be clearly defined in the context of the experiment of interest.
+1. Are units of equal size?
+    * Can have implications for the statistical analysis. 
+1. Are units grouped in anyway, such that members of the same group will behave more similarly than members of different groups?
+    * Affects the block structure of the design (Latin squares)
+1. Do such groups contain equal numbers of units?
+    * Not a problem, but something to be aware of. Recall the complexity of equations from MATH 261B when the group sample sizes were not assumed to be equal.
+1. Can units be subdivided, in space or in time, for further treatment comparisons?
+    * Different treatments applied to sub-units of the main unit may influence each other.
+1. How are proposed treatments structured?
+    * Types (least to most): none, minimal, linear, factorial. Experiments involving humans are typically simpler than non-human experiments.
+1. How rigid are requirements for treatments?
+    * The choice of number and spacing of levels can have large consequences for the precision of particular estimates.
+1. Are there any constraints on random allocation of treatments to units?
+    * Randomization structure in turn determines the structure of the statistical analysis.
+1. What are the objectives and priorities?
+    * Example: discovering significant differences or estimating numerical properties. When multiple objectives exist, the importance of each should be assessed.
+1. What variates are to be measured?
+    * If there is any possible duplication, try to omit one or use a method for reducing the variable number.
+1. What variates are to be analysed?
+    * Decide which variables need to be analyzed statistically and which can be summarized with basic summary statistics.
+    * "However important an experiment may be, no purpose is served by allowing it to generate large quantities of computer output that will never be read; indeed, the consequences can be harmful, in that the bulk of output may distract attention from the most valuable findings."
+1. How precise ought results to be?
+    * The following are acceptable expressions of precision: the variance or standard error of a difference between means, a range of error at a stated probability for an estimated parameter, or a power for a significance test.
+1. What is known of variability between units?
+    * Previous information can be useful for experimental planning and guidance.
+1. Can any concomitant be usefully measured or recorded?
+    * **Definition**: a concomitant is a phenomenon that naturally accompanies or follows something.
+    * Pre-treatment measurements can help improve comparability and reduce effective variance.
+1. Is the experiment isolated or one of a series?
+    * Series conducted at the same time in different places: coordination is important and often the design at each location is identical.
+    * Sequence in time: the design at each stage should account for what has been learn from the previous stages.
+1. What resources can be used?
+    * Many things to consider: units, duration, staff, materials, legal requirements, strictness of resource limits (absolute, costly, convenient)
+1. Are there any time constraints?
+    * Statistical consulting is often time consuming. The urgency of the report needs to be clear.
+1. Is there any place for planned sequential design?
+    * Depending on the rate of recruitment of new subjects, this design can have economical and ethical benefits.
+1. How are results to be recorded?
+    * Computer of human recorded. Digital or pen & paper. Steps should be taken to ensure high data quality.
+1. What arrangements are needed now for subsequent analysis?
+    * Basically plan ahead.
+    
+A good take on the role of the statistician in experiments,
+
+> "The correct role for a statistician...should be a collaborator, not a servant, participating extensively and deeply in many aspects of a research programme."
+
+
+## *The joys of consulting*, Chris Chatfield
+
+The background for the article is that an acquaintance of the author has recently submitted a dissertation in order to gain membership to her professional body, but the dissertation has been rejected for statistical reasons. It is not clear whether the dissertation was rejected due lack of statistical significance or due to lack of statistical rigor; if it were the former, this would be an example of the common practice in research that only significant results get published.  
+
+There are some issues with the design of the experiment and the author addresses these. I also think the process of dividing each sample in half may introduce unaccounted for error into the analysis. The details are not provided for this step of the experiment, but it seems reasonable to expect that this step might have adverse effects on the quality of the samples that are stored for longer periods of time. For example, exposure to air during this step may influence the results of the tests.  
+
+It is amazing how much our understanding of the data improved after a little bit of cleaning and a few minor calculations. Lining up decimal places, adding final zeros, and calculating numerical and percentage differences can add noticeable clarity to the dataset. Consistency in formatting the dataset, such as how the data is ordered, is also an important aspect to take note of. I would imagine it is easy to see past all of these "minor" formatting issues when you have already been staring at the data for a long time while conducting an analysis; however, it is important for the researcher to try to step back and view the data in the way someone would who is seeing the data for the first time. If possible, have a trusted colleague take a look and ask questions.
+
+The author summarizes the statistical methods used by the statistician who performed the initial analysis, and writes,
+
+> "Thus, the analysis has been done correctly--but is it appropriate?"
+
+He then proceeds to point out that the normality assumption required for the $t$-test was not met. Since this major assumption is not valid, it seems inappropriate for the author to claim that the analysis had been done correctly. I may be over analyzing the author's choice of wording, but it seems like an important distinction to me.
+
+```{r, echo = FALSE}
+a.before <- c(7.4, 8.9, 11.1, 12.3, 21.8, 39.6, 43.0, 46.6, 279.6)
+a.after <- c(6.3, 7.9, 10.3, 11.3, 20.7, 36.8, 38.7, 44.2, 254.8)
+a.diff <- c(-1.1, -1.0, -0.8, -1.0, -1.1, -2.8, -4.3, -2.4, -24.8)
+a.pdiff <- c(-14.9, -11.2, -7.2, -8.1, -5.0, -7.1, -10.0, -5.2, -8.9)
+
+par(mfrow = c(1,2))
+hist(a.diff[-9], breaks = 10, ann = FALSE, xlim = c(-6, 0), col = "royalblue")
+title(main = "Experiment A", x = "Numerical Differences", y = "Frequency")
+hist(a.pdiff, breaks = 10, ann = FALSE, xlim = c(-16, -0), col = "royalblue")
+title(main = "Experiment A", x = "Percentage Differences", y = "Frequency")
+par(mfrow = c(1,1))
+```
+
+```{r, echo = FALSE}
+b <- matrix(c(7.19, 6.55, 60.64, 60.85, 20.56, 19.92, 4076.00, 3954.00, 14.69, 13.74, 23.65, 23.65, 15.37, 15.20, 11.71, 11.88, 36.48, 36.70, 211.10, 211.10, 413.70, 422.10, 24.50, 23.53, 18.40, 18.00, 96.23, 93.01, 15.61, 15.30, 6.78, 6.47, 141.70, 140.60, 187.70, 185.30, 29.57, 29.17), byrow = TRUE, ncol = 2)
+b.before <- b[,1]
+b.after <- b[,2]
+b.diff <- c(-0.64, 0.21, -0.64, -122.00, -0.95, 0.00, -0.17, 0.17, 0.22, 0.00, 8.40, -0.97, -0.40, -3.22, -0.31, -0.31, -1.10, -2.40, -0.40)
+b.pdiff <- c(-8.90, 0.35, -3.11, -2.99, -6.47, 0.00, -1.11, 1.45, 0.60, 0.00, 2.03, -3.96, -2.17, -3.35, -1.99, -4.57, -0.78, -1.28, -1.35)
+
+par(mfrow = c(1,2))
+hist(b.diff[-4], breaks = 10, ann = FALSE, col = "royalblue", xlim = c(-6,10))
+title(main = "Experiment B", x = "Numerical Differences", y = "Frequency")
+hist(b.pdiff, breaks = 10, ann = FALSE, col = "royalblue", xlim = c(-10,4))
+title(main = "Experiment B", x = "Percentage Differences", y = "Frequency")
+par(mfrow = c(1,1))
+```
+
+
+The importance of domain knowledge is highlighted during the author's analysis of percentage differences for each experiment. Both experiments give highly significant results, but the mean percentage difference for experiment B is only 2%, which is less than the 5% threshold that the pathologist thought could indicate clinical importance. This illustrates the fact that the a consultant's report should contain all the information necessary for the researcher to meaningfully answer the research question; the report should not simply contain p-values and statistical conclusions.
+
+Methods mentioned in this article:  
+
+* Paired-sample $t$-tests (parametric)
+* Sign test (non-parametric)
+* Wilcoxon test (non-parametric)
+* Data Winsorisation
+
+## *Modern robust statistical methods: an easy way to maximize the accuracy and power of your research*, David M. Erceg-Hurn and Vikki M. Mirosevich
+
+This article discusses the major issues that arise when parametric assumptions are violated. Classic parametric tests require underlying assumptions be satisfied. Violations may lead to serious errors. The authors quote Wilcox saying,
+
+> The practical result is that in applied work, many nonsignificant results would have been significant if a more modern method, developed after the year 1960, had been used.
+
+This is exactly what happened in the previous article by Chatfield, "The Joys of Consulting".
+
+**Effects of violated assumptions**:  
+
+- inaccurate p-value calculation
+- increased risk of **falsely** rejecting null hypothesis
+- reduced power to detect genuine results
+- inaccurate measure of effect size
+- inaccurate measure of confidence intervals
+- ANOVA with unequal sample sizes and variances can inflate the risk of type I error 6 fold
+- Regression with nonnormality and unequal variances can inflate the risk of type I error 10 fold
+
+**Assumptions**:  
+
+- Normal data
+    - Commonly, datasets in psychological and educational literature are multimodal, skewed or heavy-tailed
+- Homoscedasticity (homogeneity of variance; equal population variances)
+    - Can be evaluated with variance ratio: should be close to 1:1
+    - Psychological experiments are prone to this violation due to design; "Researchers are often interested in comparing the performance of preexisting groups (e.g., men and women) on some dependent variable"
+    - Can happen in random experiments too: the experimental variable may cause variance differences between groups by the end of the trial
+    
+Unfortunately, the authors casually mention that the type I error is typically set at 0.05 without any further explanation. This casual propagation of the 0.05 cutoff reduces the integrity of hypothesis testing.
+
+**Robust Statistics**: procedures that are able to maintain the Type I error rate of a test at its nominal level and also maintain the power of the test, even when data are nonnormal and heteroscedastic 
+
+**Why are modern methods underused**:  
+
+- Lack of familiarity
+    - Resources available to researchers are dominated by methods developed before 1960
+- Assumption testing issues
+    - Failure to test assumptions: forgetfulness of lack of knowledge
+    - Low power statistical assumption tests are popular in software (Levene's test)
+    - Assumption tests have their own assumptions: normal tests assume homoscedasticity and vice versa
+- Robustness
+    - Classic tests are usually only "robust" with regards to type I error
+    - Assumption violations evaluated in isolation not simultaneously
+    - Belief that classic tests are robust is widespread (textbooks)
+    - Ex: "t test is relatively robust to violation of the normality assumption when the following four conditions hold: (a) variances are equal, (b) sample sizes are equal, (c) sample sizes are 25 or more per group, and (d) tests are two-tailed"
+- Transformations
+    - fail to restore normality or homoscedasticity
+    - do not handle outliers
+    - reduce power
+    - rearrange order of means
+    - difficult to interpret
+- Classic nonparametric statistics
+    - not robust to heteroscedasticity
+    - only appropriate for analyzing simple, one-way layouts and not factorial designs involving interactions
+- Misconceptions of modern methods
+    - Software not readily available
+    - Modern methods discard valuable data 
+
+The median is an extreme form of a trimmed mean, in the sense that all but the middle score is trimmed
+
+**Modern methods**:  
+ 
+A good strategy: analyze data using both classic and modern methods. If both analyses lead to the same substantive interpretation of the data, debate about which analysis should be trusted is moot. If classic and modern analyses lead to conflicting interpretations of data, the reason for the discrepancy should be investigated
+
+> "Essentially, robust methods work by replacing traditional regression estimators (i.e., ordinary least squares), measures of location (e.g., the mean) and measures of association (e.g., Pearson's r) with robust alternatives"
+
+- Winsorized Variance
+- Bootstrapping
+- Adjusted degrees of freedom
+- Rank transform...AVOID!!!
+- ANOVA-type Statistic
+    - tests the null hypothesis that the groups being compared have identical distributions and that their relative treatment effects ($p_i = \frac{\bar{R}_{i*} - 0.50}{N}$) are the same
+    - large differences in relative treatment effects suggest that the groups differ significantly
+- Wilcoxon Analysis
+    - involves ranking residuals
+    - robust to outliers in the y-space; not robust to x-space extreme values
+- weighted Wilcoxon techniques
+    - robust in both x and y spaces
+    - less powerful than Wilcoxon analysis
+    
+**Effect size**: provides information about the magnitude of an effect, which can be useful in determining whether it is of practical significance. Common effect size measures depend on parametric assumptions as well.
+
+- Standardized mean difference
+- Probability of superiority (a.k.a probabilistic index, intuitive and meaningful effect size index, area under the receiver operator characteristic curve, and the measure of stochastic superiority): probability that a randomly sampled score from one population is larger than a randomly sampled score from a second population
+
+    
+**Other statistical methods mentioned**:  
+
+- Levene's test
+- Kolmogorov-Smirnov test
+- Mann-whitney U test
+- population point-biserial correlation
+- number needed to treat (NNT)
+- common language effect size statistic
+
+## *Avoiding Statistical Pitfalls*, Chris Chatfield
+
+Statistics can easily be abused by the nonspecialist, but the specialist can also misuse statistics. Avoiding trouble is an extremely important topic that is neglected in favor of developing more advanced and complicated methods; however, these methods need to be accompanied a discussion that addresses the following:  
+
+* When should the technique be implemented?
+* How should the technique be implemented?
+* Why are certain things done?
+* What do the results mean?
+
+**General Guidelines**
+
+1. Formulate the problem
+    * Ask questions (lots of questions)
+    * Do research to get background information
+    * Check prior knowledge or analyses
+    * Always ask to see the data
+2. Collecting the data
+    * Poor data cannot be rescued by fancy analysis
+    * Do not apply statistical procedures based on incorrect assumptions about data collection method
+    * Poor recording techniques will create bad data and can prevent any meaningful analysis
+    * Randomness and representativeness are import when collecting data
+    * Be wary of time confounding
+    * Potentially important interactions must be considered
+    * Collect enough data so that all variables of interest can be included in the analysis
+    * The people carrying out the experiment need to have clear instructions
+    * Large observational studies can be misleading (or altogether worthless) if there are undocumented nuisance factors or if there is bias in the sampling
+3. Analyzing the data
+    * Initial data analysis
+        - The IDA helps formulate an appropriate model
+        - Assess the structure of the data: sample size, number of variables, variable type, variable measurement scale
+        - Check data quality and representativeness
+        - Determine how missing values are handled
+        - Investigate outliers and decide how to handle them
+        - Produce a descriptive summary of the data
+    * Inference
+        - Choosing the wrong technique occurs frequently
+        - Implement the right technique correctly; check that answers make sense (order of magnitude)
+        - Implement the right technique in a flexible way; identify outliers is important
+        - Try more than one type of analysis
+        - Modify existing methods
+    * Model building
+        - Formulate model (more difficult than fitting)
+        - Fit model
+        - Check model (more difficult than fitting)
+        - Good statisticians are willing and able to iterate toward a satisfactory result
+        - Consider providing a range of forecasts depending on different assumptions instead of a single prediction or interval
+4. Communicating the results
+    * The outcome of the project may be judged by the written report not by the work that was done.
+    * Write simple clear English in short sentences
+    * To start, write down all the points that you want to make
+    * Do not assume knowledge on the part of the reader
+    * Take extreme care with graphs and tables
+    * Revise repeatedly
+    
+Statistical analysis is often iterative in nature, but this is rarely illustrated in publications and textbooks. There is much to be learned from mistakes, and the author provides several excellent examples at the end of the article. I believe reading about the problems someone encountered in an analysis can often be much more enlightening than a brief summary of the successful model and the results.
+
+Main takeaways from concluding examples:  
+
+**Example 5**: the objective of the project and the necessary background information must be nailed down before considering various techniques.  
+**Example 6**: the actual problem may be quite different than the one proposed, and the client may not even know.  
+**Example 7**: don't naively believe all formulas in all textbooks are correct.  
+**Example 8**: use all the data available, and address extrapolation concerns
+
+# Section 2
+
+## *The End of Theory: The Data Deluge Makes the Scientific Method Obsolete*, Chris Anderson
+
+Up until the past few decades, models were the best tool to explain the world around us; now, the abundance of data is making models obsolete.
+
+> "Lose the tether of data as something that can be visualized in its totality"
+
+According to the author, Google's founding philosophy says background knowledge is not important: if the data says there is a difference, then that is good enough. Interestingly, this philosophy seems to contradict what many of the previous articles have been repeating: that problem context and background knowledge are crucial.
+
+> "Who knows why people do what they do? The point is they do it, and we can track and measure it"
+
+So what happens to the scientific method from here? The process has been flipped on its head. Instead of first formulating hypotheses then collecting data to test them, we now collect the data and then attempt to extract as many answers (or insights which seems to be a popular term now) as possible from the data sometimes without a clearly formulated question at all.
+
+> "Petabytes allows us to say: 'Correlation is enough.'"
+
+That being said, data is only as useful as the decisions it allows you to make. While listening to a podcast recently, the data scientist being interviewed made an interesting comment that stuck with me. He said when you slice and dice data in order to get increasingly more granular and customized, the data actually gets small quickly. If that's true, then models are far from being obsolete. 
+
+In Peter Norvig's [response](http://norvig.com/fact-check.html), he argues that models are not obsolete but instead need to evolve. He also suggests that we should embrace complexity (even thought simple models are beautiful), and we should use as much data as necessary.
+
+## *The potential effect of unchecked assumptions*, J. Gastwirth 
+
+**Issue**: the Nuclear Regulatory Commission (NRC) assumed that the event that a serious earthquake occurs in a year (event A) was independent of the event that a radiological accident occurs in a year (event B); they did not account for the fact that an earthquake could increase the likelihood of a radiological event indirectly. In other words, they calculated, $P(A \cap B) = P(A)\cdot P(B)$ instead of $P(A \cap B) = P(A|B)\cdot P(B)$. The conditional probability is extremely important to evaluate here, and it is hard to imagine it was overlooked by the NRC and PG&E.
+
+The independence assumption is often made for statistical convenience, but it can have serious ramifications as was demonstrated in this article. Anytime the assumption is made for convenience, a thorough sensitivity analysis should be conducted. The author also suggests that intervals incorporating statistical uncertainties of the major probability estimates used in the calculation should also be included in the report. The NRC should demand more rigorous analyses before making such impactful decisions.
+
+An interesting question to consider: *how to assess independence between two events when little or no data is available*? 
+
+
+## *Statistical Criticism*, I. Bross
+
+What is statistical criticism? Why is it important?  
+What does he mean by proponent of the scientific hypothesis? 
+
+The author believes a set of ground rules are needed in order to maintain a high level of quality in statistical criticism. There are two players in the game: the critic and the proponent. The critic opposes the proponent by denying the scientific claims or by arguing the the defense of the claim is not sound enough. A set of rules will help achieve broad agreement on scientific issues by,
+
+* Allowing proponents to make scientific claims supported by the data
+* Allowing others to call proponents to account for scientific claims that are not warranted by the data
+* Helping critics distinguish valid objections
+* Helping others call critics to account for irresponsible attacks on science.
+
+> "A proponent’s job is not finished as long as there is a tenable hypothesis that rivals the one he asserts."
+
+For a scientific claim to be accepted, the proponent must be able to defend it against all reasonable counter hypotheses; otherwise, the claim must be rejected or revised. The proponent does not have to defend against all conceivable counter hypothesis because that would be an impossible task. It is the responsibility of the critic to make sure their counter hypothesis is justifiable.
+
+**Hit-and-Run Criticism**: a critic points out a flaw (real or not) and then assumes the claim has been invalidated and their job is done.  
+**Dogmatic Criticism**: a critic refers to some statistical principle, practice or method as if it is incontrovertibly true and thus no further argument is needed.  
+**Speculative Criticism**: the critic makes no attempt to validate their counter hypothesis, thus is it purely speculative. Speculation should always be labeled clearly and should NEVER appear in conclusions.  
+**Tubular Criticism**: remarkable inability to see the evidence contrary to their hypothesis.
+
+#### Lessons
+
+1. Dangerous to draw inferences by scanning data and picking out favorable cases
+2. Analytic tools can help to safeguard against "tubular vision"
+3. Proponent data can be used to justify a counter hypothesis
+4. Being a responsible critic is demanding
+
+
+## *P-Value Precision and Reproducibility*, Dennis D. Boos & Leonard A. Stefanski
+
+The authors open with an important point that I had never considered before: the sampling variability of p-values is rarely considered let alone estimated. It seems the authors are interested in this topic because of the shocking number of statistically significant scientific results that cannot be reproduced. What are some of the causes of this epidemic?  
+
+* Multiplicity problems
+* Multiple modeling
+* High variability of $p$-value under the null
+* Publication bias
+* Misunderstanding of statistical methods
+
+Important results:  
+
+1. $p$-value is a random variable. Explain why?
+2. It has a distribution
+    * Null hypothesis true: $p$-value is uniform. Why does this make sense? Should be able to prove.
+    * Null hypothesis false: depends on true value, but something right skewed; $\log(p\text{-value}) \sim N$
+
+Why is it so common to overlook? Difficulty in estimating perhaps? Hence the authors mention of bootstrap.
+
+What are the shortcomings of statistics? Should they bear the responsibility for the profusion of faulty scientific claims?
+
+Three approaches to measuring the variability of the $p$-value
+
+1. Standard deviation and standard error
+    * Conclusion: The asymptotic normal results for $-\log(p\text{-value})$  suggest that the natural log or $\log_{10}$ is a reasonable scale on which to consider the variability of $p$-values
+2. Bootstrap prediction intervals and bounds for the $p$-value from an independent replication of the original experiment
+    * Conclusion: surprisingly wide
+3. estimates of $\text{Pr}(p_{new} \leq 0.05)$
+    * Conclusion: significance ($p$-value $\geq$ 0.05) is often likely not to replicate
+  
+**Interesting Quotes**:
+
+> "However, because the distribution of the p-value is highly skewed, it is preferable to work on the log scale"
+
+- I thought the distribution of the $p$-value was uniform.
+
+>  "Only the magnitude of a p-value is well determined"
+
+- If my understanding is correct, everything in the $0.01$ - $0.099$ should be treated equivalently. Makes the common 0.05 hard cutoff seem slightly ridiculous.
+
+> "Good statistical practice is to supplement hypothesis testing results with plots of data, point estimates, and confidence or credibility intervals"
+
+- The analysis should be as transparent as possible. Reporting only the results of a hypothesis test does not allow the reader to interpret the results in a manner that is appropriate for their own purposes.
+
+**Questions**:
+
+What does the term *exact p-value* mean to a trained statisticians?  
+What does it mean to practitioners who may be are not as well versed in the theory?  
+How do we feel about the stars of significance levels?  
+What are $-\log_{10}(p\text{-value})$ standard deviations?  
+What is the Uniform(0,1) standard deviation $12^{1/2}$ = 0.29?  
+
+The main takeaway from the article is that people should be more careful when reporting $p$-values, and that the variability of $p$-values should be emphasized. 
+
+
+## *Significance tests in climate science*, Maarten H.P. Ambaum
+
+In this article, the author takes uses a Bayesian perspective to analyze significance tests. This framework allows the author to exemplify the issues with interpretation of significance tests. The *Journal of Climate* is examined to demonstrate that improper use/interpretation of significance tests occurs in even the most prestigious journals. The author said it best in the following quote,
+
+> "Simply put, the significance statistic is not a quantitative measure of how confident we can be of the 'reality' of a given result."
+
+Possible causes of increased (mis)use:
+
+* Increased ease due to software
+* Demand from reviewers
+
+Bad Example: "this correlation is highly significant $(p < 0.01)$." $\Leftrightarrow$ the correlation is real and the small $p$-value is used as proof.
+
+**Takeaways**:
+
+* Standard significance tests hardly ever give a useful answer to the question we are trying to answer.
+* Typically we are interested in assigning probability to the validity of the null, but significance testing gives a probability for a result at least as distinctive as the observed result given the null is true. This is called the **transposed conditional** error.
+* A high $p$-value means it is easy to produce a result as distinctive as we observed, but it does not mean the null hypothesis is highly probable.
+* **Category error**: a property is wrongly ascribed to something that cannot have this property. Remember, the $p$-value is connected to the null hypothesis being true and the consequences associated with that assumption.
+* Bayes' theorem stipulates that low prior odds need an extraordinary amount of positive evidence for the hypothesis to change this to high posterior odds.
+* In the low signal-to-noise ratio case, the observed result is mainly a measure of the noise and says little about the signal.
+* We try to state hypotheses (null and alternative) so that they are disjoint sets that are completely exhaustive, but there can still be other plausible alternative hypotheses. Here Occam's razor comes to play. Ask yourself: is my theory the next most likely explanation of the observation?
+* Important difference: low $p$-value can provide positive evidence for the hypothesis, BUT it does not provide any quantitative measure of what the posterior odds are or by what amount the odds might have improved.
+* A significance test can often be thought of a reasonable test for insignificance (debunking spurious hypotheses).
+
+Prosecutor's Fallacy
+
+The three P-values. The p-value is the...
+
+1. Probability that results are due to chance
+    * There is no universal "chance"; you need a random variable and a distribution to calculate a probability
+2. Reliability of the result
+3. Probability a null hypothesis is true
+    * We assume a null and calculate probability of test statistic, not the other way around.
+    
+Point of time series - correlation comment?
+
+# Section 3
+
+## *The role of the statistician:  Scientist or shoe clerk*, Irwin D. J. Bross
+
+This article briefly discusses the responsibilities of the statistician in biomedical research. The author discusses alternate roles the statistician may assume, and the resulting consequences of each. Example consequences: unpopularity, unemployment, backlash from certain collaborators.
+What is a collaborative study in public health? Multiple organizations, multiple people...?
+Who is the customer in the shoe clerk analogy?
+
+> "Often they really don't want his advice they only want his official blessing for decisions which they have already made."
+
+If the statistician has doubts about these decisions that "they have already made", should he be giving his blessing? This will always be an extremely difficult question to ask because the statisticians job may depend on it, and most people really enjoy having a job (and really need one). 
+
+**Lesson**: "Anyone who acts like a shoe clerk will end up being treated like a shoe clerk"
+
+
+## *The Getting of Wisdom: Educating Statisticians to Enhance Their Clients' Numeracy*, Eric R. Sowey
+
+This article focuses on the process following transformation process:
+$$\text{Data} \implies \text{Information} \implies \text{Knowledge} \implies \text{Wisdom}$$
+The last two elements in the transformation are what create the value. There are three types of literacy.
+
+The opening two paragraphs of the article make a strong argument because most people can wrap their minds around the concept of illiteracy; however, innumeracy is more foreign. If you follow the author's instructions and replace **(il)literacy** with **(in)numeracy** and **words** with **numbers** in the first paragraph, the message still makes complete sense.
+
+```{r, include=FALSE}
+first.paragraph <- "Every society today values a literate citizenry and strives to eliminate illiteracy. We can distinguish total illiteracy from functional illiteracy. Someone who is totally illiterate does not know how to read or write words: such a person 'misses the message'. Someone who is functionally illiterate does not well comprehend or express logical arguments in words: such a person 'misses the meaning in the message'. It is, of course, total illiteracy that every society aims to eliminate, through an elementary education for all. Functional illiteracy is a longer-term challenge to educators. A person's functional literacy grows only gradually, generally in proportion to length and level of education and/or extent of involvement in the world of words."
+```
+
+```{r}
+i1 <- gsub("liter", "numer", first.paragraph)
+i2 <- gsub(" iln", " inn", i1)
+innumeracy <- gsub("word", "number", i2, fixed = TRUE)
+cat(innumeracy, fill = TRUE)
+```
+
+**littérateur**: a person who is interested in and knowledgeable about literature. (unfortunately **numérateur** does not translate to a person interested and knowledgeable about numbers...it just means numerator).
+
+The central notion of numeracy is, "the ability to draw correct meaning from a logical argument couched in numbers." Throw in uncertainty and now you have a **statistical argument**. This is a great perspective on why statistics is so useful.
+
+What does it mean to "argue back to a statistic"?
+
+The author believes a good approach to improving numeracy in the community is to train the clients that receive professional consultation from statisticians.
+
+Why are people so willing to accept a statistic?
+
+1. It is ingrained in people from schooling that numbers are precise, and the confusion between precision and accuracy is widespread
+2. People are taught numerical results are important
+3. People trust "official" figures from authorities. Two common examples heard in the media:
+    * The unemployment rate
+    * The Dow-Jones Industrial Average
+    
+What are the differences between deduction, induction, analogy, intuition?
+What is the meaning of this example of intuitive statistics: the "law of averages"" governs the determination of probabilities by relative frequency?
+What is an counter example of "statistical significance implies practical significance"?
+
+Current approaches to improving statistical literacy typically involve structuring a formal course around methods and techniques instead of interpretation of results and limitations. For what it is worth, I believe the MS Statistics at SJSU has found a valuable balance between the two.
+
+When studying statistical techniques, the strengths and limitations should be emphasized as much as the mechanics of the technique.
+
+Although I agree with the author's approach to improving statistical literacy via client training, it cannot be the only approach adopted; otherwise, the same cycle will continue, and the improvement in statistical literacy in the community will be slow and negligible. There needs to be a concerted effort to address functional numeracy during the early years of students' learning.
+
+## *Twenty Statistical Errors Even YOU Can Find in Biomedical Research Articles*, T. Lang
+
+Statistical errors in medical research are more common than you would hope, and often they are due to misuse of basic statistical concepts.
+
+1. Reporting measurements with unnecessary precision
+    * Surprisingly, rounding numbers to two significant digits improves communication
+2. Dividing continuous data into ordinal categories without explaining why or how
+    * Reducing variables in this way reduces precision as well as variance
+    * Should be able to explain why this decision was made and how the boundaries are chosen.
+    * Beware: boundary choice can affect the appearance of results (ex: histograms bins or KDE bandwidth)
+3. Reporting group means for paired data without reporting within-pair changes
+    * Two seemingly conflicting results can be reported that are both technically correct.
+4. Using descriptive statistics incorrectly
+    * Mean and standard deviation correctly describe the normal distribution of values. Other non-normal distribution have different relationships. Must identify **pivotal quantities**
+    * Median and range are more appropriate for smaller data, which is common in biological datasets
+5. Using the standard error of the mean (SEM) as a descriptive statistic or as a measure of precision for an estimate
+    * To avoid confusion, a confidence interval should be used to report the precision of the estimate of the mean instead of a the standard error of the mean.
+6. Reporting only P values for results
+    * Reporting absolute difference between groups and the confidence interval for the difference will be less likely to be misinterpreted than p-values.
+    * General guideline: all values in CI clinically important $\implies$ clinically effective; no values in CI clinically important $\implies$ clinically ineffective; otherwise, not enough data.
+7. Not confirming that the data met the assumptions of the statistical tests used to analyze them
+    * Always report the method used and assessment of the assumptions.
+8. Using linear regression analysis without establishing that the relationship is, in fact, linear
+    * Always check the residuals.
+    * **Figure 5 does not suggest non-linearity but maybe a different way to deal with the outlier**
+9. Not accounting for all data and all patients
+    * Flow charts are nice.
+10. Not reporting whether or how adjustments were made for multiple hypothesis tests
+    * Good practice to document what hypothesis tests you want to conduct before beginning the experiment.
+    * Consider multiple comparisons corrections if testing many hypothesis.
+11. Unnecessarily reporting baseline statistical comparisons in randomized trials.
+    * **What does it mean by at baseline?**
+12. Not defining "normal" or "abnormal" when reporting diagnostic test results.
+    * It is useful to try and assess the clinical importance of each definition of "normal"
+13. Not explaining how uncertain (equivocal) diagnostic test results were treated when calculating the test's characteristics (such as sensitivity and specificity)
+    * Include counts of uncertain results: intermediate, indeterminate, and uninterpretable.
+14. Using figures and tables only to "store" data, rather than to assist readers
+    * Tables and figures should be used to communicate information.
+    * Additionally, they should be referred to in the body of the paper,i.e., don't just include them for decoration.
+15. Using a chart or graph in which the visual message does not support the message of the data on which it is based
+    * Plots should be adjusted until the message conveyed by the plot is the same as that of the data.
+    * **Double scale mathematical relationship comment**
+16. Confusing the "units of observation" when reporting and interpreting results
+    * Always be clear about what is actually being studied: person, thing, event.
+17. Interpreting studies with nonsignificant results and low statistical power as "negative," when they are, in fact, inconclusive.
+    * Lack of statistical significance can be due to low power, which means the results are inconclusive not definitively negative.
+18. Not distinguishing between "pragmatic" (effectiveness) and "explanatory" (efficacy) studies when designing and interpreting biomedical research
+    * The results of a study should be interpreted in light of the nature of the question it was designed to investigate.
+19. Not reporting results in clinically useful units.
+    * Spend some time thinking about what is the best measure to convey your results.
+20. Confusing statistical significance with clinical importance
+    * Results can be statistically significant but not clinically important; also clinically important but not statistically significant.
+    
+## *Why most published research findings are false*, John PA Ioannidis
+
+There is concern that the majority of published research claims are in fact false, and the author is discussing the impacts of this phenomenon. He claims that,  "in most study designs and settings, it is more likely for a research claim to be false than true." At first this may seem shocking, but that could simply be due to the fact that we typically only hear about significant results; it's quite possible that the majority of results are insignificant and we just don't hear about them.
+
+**Positive Predictive Value (PPV)**: After a research finding has been claimed based on achieving formal statistical significance, the post-study probability that it is true is the positive predictive value
+
+Things that make a research finding less likely to be true (corollaries):
+
+* Field is small
+* Small effect sizes
+* More relationships tested
+* Less strict design protocol
+* Higher financial incentives
+* Greater scientific competition
+
+What are examples of different fields where $R = \frac{\text{true relationshsips}}{\text{no relationships}}$ among relationships tested in the field.
+
+  * High $R$: medicine
+  * Low $R$: physics, astronomy
+  
+
+## *The Insignificance of Null Hypothesis Significance Testing*, Jeff Gill
+
+
+Backward reasoning:
+
+> "A hypothesis that may be true may be rejected because it has not predicted observable results that have not occurred." -Jeffreys
+
+What is the Fisher test of significance?  
+
+  * Interestingly, Fisher made no mention of an alternative hypothesis: reject the null if the achieved significance level is sufficiently small. (should be established within problem context) otherwise **reach no conclusion**.
+  * The $p$-value can be interpreted as the strength of the evidence for the null hypothesis.
+  * Significance level determined afterwards as function of the data.
+  * The null hypothesis is named so because it is intended to be nullified.
+
+What is the Neyman-Pearson hypothesis test?
+
+  * Proposed specifying two competing hypotheses. Allows for the specification of $\alpha, \beta$, and *power* of the test.
+  * Step 5 of the Neyman-Pearson uses the term "accept": do we really accept one hypothesis over another? Apparently the authors do mean accept, see footnote 5 on page 652.
+  * A risk function can be assigned to the decision making step (5), which is the expected loss from making an error.
+  * Significance level determined ahead of test
+  
+**Synthesis of the two methods**: researchers pretend to select $\alpha$ ahead of time, but then use p-values as a measure of strength of evidence for the null. 
+
+**Criticisms**:
+
+* Modus Tollens:
+    * Null hypothesis significance testing builds off of the logical argument of **modus tollens**: however, certainty statements are replaced with probability statements and issues arise.
+* Inverse probability problem
+    * Misconception: the smaller the p-value, the greater the probability that the null hypothesis is false $\Leftrightarrow P(H_0|D)$. False!
+    * A Bayesian approach can help avoid the inverse probability problem.
+* Model selection
+    * The null and alternate hypotheses are not always exhaustive; there could be many plausible alternates
+* Significance through sample size
+    * Beware: null hypothesis testing on a large sample size almost always results in statistical significance.
+    * Large sample size DO NOT imply more reliable results
+* The arbitrariness of alpha
+    * 0.05 and 0.01 were really chosen for convenience when researchers had to look these things up in tables.
+* Replication fallacy
+    * For replication purposes, we are really interested in the distribution of the test statistic.
+* Asymmetry and accepting the null hypothesis
+    * "Failing to reject the null does not rule out an infinite number of other competing research hypotheses"
+    * Failing to reject provides no information about the world
+    * Non-significance is not evidence that the effect is nearly zero
+* Cross-validation studies
+    * Replication analysis should always include power and effect size of the replication test.
+
+**Recommendations** (alternatives):
+
+* Confidence intervals
+    * As sample size increases, the interval narrows.
+* Parameter estimates and associated standard errors
+    * Can benefit from grouping based on reliability regarding distribution assumptions
+* Bayesian analysis
+    * Actual probability statements can be made about the unknown parameters using the posterior distribution
+* Meta analysis
+    * Tries to analyze variance in a set of studies to determine how much is due to sampling and measurement error and how much is due to some real effect.
+    * Assumptions: studies are independent, variables measured approximately the same way
+    
+
+I believe misuse of significance testing and subsequent misinterpretation of the results. Even with statistical training, it can still be difficult to interpret the results correctly. Also, it is always difficult to translate the interpretation into a digestible form for someone without statistical training. I think the author sums it up nicely,
+
+> "The basic problem with the null hypothesis significance test in political science is that it often does not tell political scientists what they think it is telling them."
+
+By no means is this problem specific to political science. I assume it occurs in any field where significance testing is used frequently.
+
+## *Ethical Guidelines for Statistical Practice*, ASA
+
+What do the authors mean by, "using statistics in pursuit of unethical ends is inherently unethical"?  
+
+* I believe the authors are warning people that it statistical work is not detached from ethics: you cannot defend against claims of ethical misconduct by claiming "I used statistics."
+
+A) Professional Integrity and Accountability
+    * I believe point (1) in this section is the most important for maintaining the professional integrity of a statistician.
+B) Integrity of Data and Methods
+    * The analysis should be transparent and the results should be clearly stated for the general public as well as for a more technical audience.
+C) Responsibilities to Science/Public/Funder/Client
+    * Point (1) in this section is an important note that sometimes gets overlooked in favor of the one single best solution. Some clients may out different emphasis on scope, cost, or precision.
+D) Responsibilities to Research Subjects
+    * Point (2) is especially important to keep in mind in this day and age where the focus is often on collecting as much data as possible.
+    * Point (7): "statistical descriptions of groups may carry risks of stereotypes and stigmatization". It is important to be sensitive to how the results are presented and how they might be interpreted.
+E) Responsibilities to Research Team Colleagues
+    * The author mentions different professions have different professional standards, but wouldn't all professions agree on the ethical standards simply from a moral and human perspective? I would think that "**science**" has an overarching set of standards that the various disciplines follow.
+    * Point (3) is a tough one because the pressures of expediency can be quite high.
+F) Responsibilities to Other Statisticians or Statistics Practitioners
+    * Point (3) "instills in students and non-statisticians an appreciation for the practical value of the concepts and methods", is crucial. If people lose sight of the practical value, then the field becomes obsolete.
+G) Responsibilities Regarding Allegations of Misconduct
+    * There is an important difference between honest error and misconduct.
+H) Responsibilities of Employers, Including Organizations, Individuals, Attorneys, or Other Clients Employing Statistical Practitioners
+    * I would imagine point (3) is often overlooked by clients employing statisticians; they expect the statistician to validate the result they want.
+
+What are study endpoints?  
+What does it meant by, "The ethical statistician understands the difference between questionable scientific practices and practices that constitute misconduct"?  
+
+* I believe questionable scientific practices mean not applying an appropriate model, or misinterpreting an assumption; whereas, misconduct is more blatant and purposeful. In terms of misconduct, you are knowingly trying to deceive or do something that would not be accepted by the statistical community.
+
+Do we need to follow the same guidelines in our academic projects too?  
+
+* Many of the ethical concerns are not present but there are some best practices in the guidelines that should be followed in academic projects.
+
+# Section 4
+
+## *How to display data badly*, H. Wainer 
+
+> "One of the great assets of graphical techniques is that theycan convey large amounts of information in a small space."
+
+**Chartjunk**: filling a chart with nondata related content in order to make the plot look less empty and thus more informative.
+
+1. Show as Few Data as Possible (Minimize the Data Density
+    * The **data density index** (numbers/square inch) is a clever measure of use of space.
+2. Hide What Data You Do Show (Minimize the Data-Ink Ratio)
+    * Another clever measures is the **data-ink ratio**: closer to zero the worse the graph
+    * Fine grid and dim points, blow up the scale, chartjunk
+3. Ignore the Visual Metaphor Altogether
+    * The metaphor should match the natural order of the data. Don't switch the metaphor mid plot.
+4. Only Order Matters
+    * Area is often ignored when only the length is considered important; however, humans perceive area quite differently on individual basis, so the intended affect will likely be distorted.
+    * **Perceived distortion**: perceived change in value divided by actual change.
+5. Graph Data Out of Context
+    * Arbitrary choice of scale can have profound impacts on perception.
+6. Change Scales in Mid-Axis
+    * Can make large differences appear small and even make exponential changes appear linear.
+7. Emphasize the Trivial (Ignore the Important)
+    * It is important to identify which comparisons are of greatest interest and structure the plot to highlight them.
+    * Identifying which main effects are large and small helps guide the plot design.
+8. Jiggle the Baseline
+    * Stacking areas under lines is ONLY good for total summation, but this can easily be achieved with an additional *total* line. As a result, the viewer can still see the trends in the individual lines.
+9. Austria First!
+    * Consider ordering by some aspect of the data instead of alphabetically
+10. Label Illegibly, Incompletely, Incorrectly, and Ambiguously
+    * Common technique used to create an nonexistent affect to support a particular argument.
+11. More Is Murkier: More Decimal Places and More Dimensions
+    * A common theme among many of these plots is to make rectangles three dimensional as if they are popping off the paper.
+12. If It Has Been Done Well in the Past, Think of Another Way to Do It
+    * Many excellent graphical displays of data already exist and can easily be repurposed for your own needs. Don't be so quick to design a new, flashy visual that will force people to spend a lot of time trying to interpret the graphical design.
+    
+> "Thus, the rules for good display are quite simple. Examine the data carefully enough to
+know what they have to say, and then let them say it with a minimum of adornment."
+
+- This is an easy thing to ignore. With the prevalence of visualization software, it is easy to create an abundance of plots without much thought. Each plot should be made with care to highlight an important aspect of the data. The focus should always be on conveying the most information in the simplest way possible. Focus on what the data has to say, not the design.
+    
+## *Twenty-Five Analogies for Explaining Statistical Concepts*, Behar, Grima, and Marco-Almagro
+
+I agree with the author's that non-traditional tools, such as jokes, to reinforce learning can be useful. From 261B, I vividly remember Dr. Crunk saying "LSD...don't use it!" in reference to Fisher's Least Significant Difference of course. I also remember the arguments to the ARIMA functions because of a tangent he went on discussing P.D.Q Bach. 
+
+As police sketch artists are to describing important features of a face, statisticians are to describing datasets. But what does the author mean by **numerical synthesis**?
+
+Contextual information around "outliers" should be thoroughly consider before throwing points out. See section 2.7.
+
+2.13: 4-finger and 6-finger example? Is the author suggesting that if we had 6-fingered hands, that the established cutoff would be 6%?
+
+With enough data, we will almost surely be able to detect some difference, but that difference may not be important to answering the question we are interested in: statistical significance versus practical significance.
+
+The size of a sample from a population does not necessarily need to increase with the size of the population, but representativeness is crucial.
+
+Section 2.23: how does milk consumption relate to the development of the country, and does the development of the country mean the rate of deaths from cancer increases? Possibly due to ability to detect cancer death, but maybe the related variable is just population size.
+
+Section 2.24: maximize the number of topics in the response given that you already have a subset of the topics covered.
+
+## *Writing technical papers or reports*, A. Ehrenberg
+
+Reading technical reports and journal articles can be daunting due to the length and complexity of each document encountered. These are significant deterrents for me personally: I don't want to invest my time in struggling through a lengthy article that ultimately leaves me feeling bewildered. The following five rules laid out by the author can help make technical writing more approachable to a broader audience.
+
+1. Start at the end
+    * I have encountered this issue while reading articles for work. I found a plethora of candidate articles whose abstract or introduction seemed relevant to my problem, only to find at the end that the results were not useful for my purposes.
+    * Typical: objectives $\Rightarrow$ background $\Rightarrow$ methods $\Rightarrow$ results $\Rightarrow$ conclusions  Better: main results & conclusions $\Rightarrow$ detailed findings $\Rightarrow$ methods $\Rightarrow$ background $\Rightarrow$ discussion
+    * Interesting point: the abstract should state results not objectives.
+    * Similar concept to a term I heard recently for the first time, **BLUF**: bottom line up front.
+2. Be prepared to revise
+    * Once thoughts are put onto paper many things begin to appear: unexpected connections, gaps, and discrepancies.
+    * A rough gives a better perspective for ordering sections and removing unnecessary information.
+    * Repetition is beneficial.
+    * "Hard though it may be, we should never seek to defend ourselves. When the critic cannot understand something, it is always our fault."
+3. Cut down on long words
+    * A good piece of advice I received from an industry professional: try to write as if you were having a conversation with someone.
+    * Clever metric, **Fog Factor**: divide the number of long words (3+ syllables) by the number of sentences (in half a page). Most useful as a warning when it gets above 4.
+    * Short sentences are a relief to the reader, but too many and the writing style will feel abrupt. Long sentences should be there for a specific reason.
+4. Be brief
+    * Simply put: when in doubt, cut!
+5. Think of your reader
+    * Most of the time, readers are wondering what they can get out of your report.
+    
+Reading this paper made me think the MS Statistics students would benefit greatly from a MATH (STAT) 200W class focused on data analysis reporting. I believe this would be more beneficial than taking ENGR 200W or CS 200W. Ideally, the class would be taken in the first semester of the program so that students could apply their technical writing skills to their course projects throughout the remainder of the program. The downside of course is finding someone to teach a MATH 200W course, which is probably much more difficult in practice.
+
+
+## *Hans Rosling The Man Who Makes Statistics Sing*, Edwin Smith; *TED Talk*, Hans Rosling
+
+Animated graphics and an animated presenter clearly have a lasting impression on people. Rosling's presentation style and impressive graphics had such a strong impact on Bill Gates that he decided to invest billions of dollars in improving healthcare in developing countries. 
+
+> "People don't find these boring at all, but they don't think of them as 'statistics'...It's only boring if you get data you didn't ask for, or if you don't realise its link with the real world." - Hans Rosling
+
+What separates Rosling's animated graphics from others is that he uses them to draw attention to a serious purpose. I think animated graphs are often used for silly visualizations, but Rosling's graphs stay with you because the message is so important.
+
+Numbers, statistics, and visualizations can go a long way towards reducing the substantial amount of ignorance people have regarding the rest of the world. Animation, when used appropriately, can help make important trends in information more easily recognizable. I have read on a number of occasions that smooth transitions of points in a scatter plot can help humans identify trends that they would not have seen otherwise. Rosling's "bubbles" are a perfect example of this. The JavaScript library, [D3](https://d3js.org/), tries to make data animation more approachable and it has become very popular.
+
+# Section 5
+
+## *Damned liars and expert witnesses*, P. Meier
+
+Due to civil rights legislation, courts are adopting statistical inference; however, statistics as commonly practiced is not well suited for this purpose and this leads to consequences for both fields. Improper use of statistics in a court case leads to decreased respect for both fields, and, more importantly, huge ethical problems related to the decision of the court.
+
+Civil rights legislation made statistical inference in the courtroom more common due to the need to assess evidence of illegal discrimination.
+
+It is not hard to imagine finding two statisticians that have opposing explanations for the same data. Thus, statisticians should be wary when assuming the role of expert witness: the integrity of the field is often at stake.
+
+> "The professional integrity of the expert witness and, through him, of the profession he represents is not well protected by the courts and hardly at all by counsel."
+
+#### Domains of Application of Statistics in Law
+
+1. Scientific Sampling
+    * Advice: testify only within your professional expertise, not the subject area expertise you think you may have acquired.
+    * Best to draw a sample with as much credibility as possible rather than rely on your own judgement regardless how sound.
+2. Paternity and Fingerprints
+    * Probability depends on population gene frequencies, but often some subset of the population is of interest and the frequencies may not be well established.
+3. Observational Data
+    * Statistical inference is useful as a benchmark: no significance for an observed association means not persuasive, highly significant means the persuasiveness is dependent on background factors and should be examined further.
+    
+Statisticians as expert witnesses are often regarded as oracles, and their testimonies can often be misinterpreted or only partially interpreted.
+
+#### Corruption Influences
+
+1. Aggrandizement: expansion of power, wealth, rank, or honor
+    * Tempting to be definitive rather than making various qualifications, to ignore other schools of thought.
+2. Bribery
+    * An expert that is honest and repeatedly goes against his client's argument will not be in high demand.
+3. Flattery
+    * When money is not an issue, the client will tell the expert that only they can uphold the integrity of the field in the courtroom.
+4. Co-option
+    * Can occur when transitioning from consultant to object witness.
+5. Gladiatorial Role
+    * Viewing the interrogator as an adversary trying to discredit you, and as a result you must defend yourself against them.
+6. Personal Views
+    * For some topics (discrimination), few people are without strong opinions.
+    * Different circumstances may lead us to different conclusions even though the statistical reasoning should be the same.
+    
+> "The expert should be much more his own man and much less the puppet of his client's counsel than is typically the case today"
+    
+#### Questions
+
+1. What is the significance of removing "randomness" and "social scientist" from the ruling in the *Hazelwood School District v. United States*?
+2. How do tests operate to exclude a certain race? Is it done on purpose or accidentally?
+3. What exactly is the Griggs principle?
+4. Doesn't it seem ridiculous that an "expert" witness would be chosen by a particular side?
+
+## *How a Court Accepted an Impossible Explanation*, Gastwirth, Krieger and Rosenbaum
+
+#### Authors
+
+* **Joseph Gatswirth**, Professor and Advisor of Statistics; Department of Statistics, George Washington University. 
+    * *Books*: Statistical Reasoning in Law and Public Policy, Statistical Science in the Courtroom 
+* **Abba M. Krieger**, Professor of Statistics, Operations, Information and Decisions, Marketing; Department of Statistics, The Wharton School, University of Pennsylvania
+    * *Interests*: applications in the law, operations management and marketing, applied probability, bootstrap, complex sample surveys, density estimation, grouped data, observational studies, worst case analysis of heuristics
+* **Paul R. Rosenbaum**, Professor of Statistics; Department of Statistics, The Wharton School, University of Pennsylvania
+    * *Interests*: design and analysis of experiments, design and analysis of observational studies, health outcomes research
+
+#### Summary
+
+As statisticians, one thing we hear repeatedly is that correlation does not equal causation. It may very well be the case that the observed association between two variables is due to some third unobserved variable; however, if you propose a candidate third variable to explain the association, then you must be able to defend the claim with a sound argument. 
+
+This article is centered around a Canadian court case that challenged the reliability and validity of a psychological test used by a government agency to determine employee promotion. The test was challenged due to the large difference in pass rates between males and females, but the test was approved because the court concluded the passing rate difference was explainable by differences in college education rates. The problem the authors point out is that complete information was not provided to support the argument that ultimately swayed the court decision.
+
+It is important to note, the authors are not trying to uncover gender discrimination. They are simply trying to illustrate that the argument that influenced the court decision was wrong, and that it is the role of the statistician to provide clarification when arguments are made about unobserved variables.
+
+```{r, echo = FALSE}
+# Gender / Passing
+t1 <- matrix(c(68,68, 183,47), nrow = 2, dimnames = list(c("F", "M"), c("P", "NP")))
+# Education / Gender 
+t2 <- matrix(c(63,60, 188,55), nrow = 2, dimnames = list(c("F", "M"), c("C", "NC")))
+T <- function(m) {
+  n.11 <- t1[1,1]
+  n11. <- t2[1,1]
+  n1.. <- colSums(t2)[1]
+  n..1 <- colSums(t1)[1]
+  n21. <- t2[1,2]
+  n2.. <- colSums(t2)[2]
+  n12. <- t2[2,1]
+  n22. <- t2[2,2]
+  num <- n.11 - ((n11.*m/n1..) + (n21.*(n..1 - m)/(n2..)))
+  denom <- (n11.*n12.*m*(n1.. - m))/(n1..^2*(n1.. - 1)) + (n21.*n22.*(n..1 - m)*(n2.. + m - n..1))/(n2..^2*(n2.. - 1))
+  res <- num / sqrt(denom)
+  names(res) <- NULL
+  res
+}
+a <- max(c(0, t1[1,1] - t2[1,2])) + max(c(0, t1[2,1] - t1[2,2]))
+b <- min(c(t1[1,1], t2[1,1])) + min(c(t1[2,1], t2[2,1]))
+T.out <- numeric(0)
+for (m in a:b) {
+  T.out <- c(T.out, T(m))
+}
+
+plot(a:b, T.out, pch = 20, cex = 0.5, col = "violetred", ann = FALSE, bty = "n")
+title(x = "m", y = "T(m)", main = "MH Statistic as a Function of m")
+```
+
+
+#### Questions
+
+1. How reliable do you think the General Intelligence Test is when you initially hear that 59% of males and 27% of females passed? 2. Did your belief about the reliability change when you read that 52% of males had some college education compared to 25% of females?
+3. Is there a statistical test we could use to determine if the difference in pass rates between genders was statistically significant?
+4. The authors ask a number of questions in the middle of page 313, did anyone put any thought into answering any of these questions?
+4. Any familiarity with the Mantel-Haenszel (MH) Statistic?
+5. Can anyone think of an example of an argument involving an unobserved variable that is...
+    * possible in principle, but not plausible?
+    * entirely plausible?
+6. Any thoughts on the authors' view of the role of the statistician in regards to arguments involving an unobservable variable?
+      
+
+## *The statistician’s role in developing a protocol for a clinical trial*, The American Statistician; *Fraud in Clinical Trials*, Significance, Gordon Murray and Christopher Weir.
+
+#### *The statistician’s role in developing a protocol for a clinical trial*
+
+As statisticians in training, our initial reaction to consulting work might be, "give me the data you have collected and I will conduct some analyses." This is the wrong approach. As has been mentioned many times before in other articles, ideally the statistical consultant should be an active participant in the entire experiment. A huge part of this responsibility is learning the clinical subject matter, which can require a significant time commitment. Observing the experimental procedures in-person or being subjected to them when possible can help the statistician learn the subject matter more quickly; these hands-on experiences can also give the statistician ideas for improvements to the experimental design.
+
+Statistician should be aware that the clinical training that doctors receive is often antithesis to the training of an investigator. They view randomization as a problem that leaves treatment to chance, and masking as a tool that only serves to obscure information. Introducing a strict protocol detracts from the *art of medicine*. It is the responsibility of the statistician to educate the medical collaborators so that they appreciate and acknowledge the importance of the experimental design.
+
+There are a plethora of crucial design questions that must be answered, but should not be attempted until the statistician has sufficient background knowledge. The authors list at least 17 example questions that should be considered. There are also a number of administrative questions that the statistician should help answer when participating in clinical trial research, e.g., what is the process for getting study papers published.
+
+When working with collaborators to answer design questions, "the statistician should be a good listener, open-minder and flexible, and when necessary, firm." Don't be a shoe clerk!
+
+#### *Fraud in Clinical Trials*
+
+I was previously unaware that randomization and blinding offer protection against bias as well as some fraud; as a result, the impact on the final results is minimal. Fraudulent activities that specifically undermine randomization or blinding will of course have much stronger influence on the results. That being said, fraud in any capacity can have huge ramifications in terms of public opinion.
+
+General detection methods:
+
+* Site monitoring (usually with random sampling of sites to reduce costs)
+* Comparing results from different hospitals or doctors
+* Statistical methods for identifying data fabrication
+
+Susceptible areas:
+
+* Eligibility
+* Repeated tedious measurements
+* Adverse event reporting (bad side effects)
+* Medication compliance
+* Patient diaries.
+
+Univariate detection tools:
+
+* Examining the distribution of a single variable can highlight discrepancies. People are not as good at faking reasonable variability, and don't even get me started on kurtosis.
+* Checking dates: no weekends or public holidays
+* Benford's law (see figure below; useful on large scale from single site)
+* Terminal digit preference (should be evenly spread across possible values)
+* Equipment reporting output (integers vs decimals)
+
+```{r}
+m <- matrix(c(1, 30.1,
+              2, 17.6,
+              3, 12.5,
+              4, 9.7,
+              5, 7.9,
+              6, 6.7,
+              7, 5.8,
+              8, 5.1,
+              9, 4.6), 
+            byrow = TRUE, ncol = 2)
+plot(m, type = "b", axes = FALSE, ann = FALSE, ylim = c(0,40), col = "#0055A2", pch = 19)
+axis(1, 1:9, 1:9)
+axis(2, seq.int(0,40,10), seq.int(0,0.4,0.1))
+title(main = "Benford's Law", x = "Leading Digit", y = "Relative Frequency")
+```
+
+Multivariate detection tools:
+
+* Outliers
+* Inliers (observations too close to the overall mean)
+* Cluster analysis
+
+Another strong indicator of fraud is a long stretch of perfect attendance over a long period of time in a single clinical trial. The intervals between visits should also be scrutinized if they appear too consistent.
+
+There are many financial incentives for those conducting clinical trials to engage in fraud, but the guilty parties are rarely masterminds of data fabrication. The techniques listed above are good exploratory tools that can help investigators decide if more time and resources should be diverted to investigating a particular site, triallist, or source of data.
+
+
+## *Figures, statistics and the journalist: an affair between love and fear*, Wormer
+
+The media love opinion polls, rankings within categories, and statistics that summarize the way people love. The authors use the term "statistics" to refer to summary statistics of various populations: counts, percentages, means, etc; they are not referring to statistics as we typically think of it: modelling, inference, estimation, etc.
+
+In my opinion, sections 2 and 3 of this paper are not well written, and the message of each section is not at all clear.
+
+It is much easier now than ever before for journalists to take advantage of computer assisted reporting. Even though vast amounts of data available are to journalists these days, they must be wary of the data quality. Integrity checks should be conducted before writing a report based on the data. Modern journalists (and their audience) could benefit greater from an increased statistical and data literacy. In turn, statisticians should always strive to improve their ability to convert statistical results into meaningful information easily digestible by non-technical audiences.
+
+Basically, journalists and statisticians should team up to give good information to the public. Sounds somewhat like the work that 538 is doing.
+
+## *Demographic and social variables associated with problem gambling among men and women in Canada*, Tracie O. Afifi, Brian J. Cox, Patricia J. Martens, Jitender Sareen, Murray W. Enns
+
+The purpose of this paper is to identify features that may be indicative of problem gambling in men and women. The features of interest are various demographic and social variables. The authors of this paper make a good research design decision to separate out male and females so the gender effects can be examined separately. The results show several interesting differences in problem gambling between men and women, so their decision appears to be justified. Perhaps most notably, they find that women pathological gamblers had more friends than men pathological gamblers, which suggests gambling may be a social event for women.
+
+The beginning of the *Methods* section (2) does a good job of explaining all the details of the sample and the variables being analyzed. I particular like their use of factor analysis via principal components to identify two factors: positive and negative coping strategies.; however, they ended the paragraph with a brief mention of two Cronbach alpha values without any interpretation of the values. Section 2.7, *Statistical Weights*, does not make it clear what the authors mean by "statistical weights" or how the weights were applied. For the most part, the *Methods* section is thorough.
+
+If we are trying to use personal characteristics of individual gamblers to assess the likelihood of becoming a problem gambler, why not go one step further and sequence the genomes of gamblers to see if there is a genetic predisposition towards problematic (addictive gambling).
+
+# New Recommendations
+
+I think **Distill** is a taking a cool, modern approach to academic publishing by going beyond the typical PDF format. [About Distill](http://distill.pub/about/). A couple articles from the site that I found interesting:
+
+  * General article: [Research Debt](http://distill.pub/2017/research-debt/)  
+  * Method specific article (interactive): [How to Use t-SNE Effectively](http://distill.pub/2016/misread-tsne/)
+
+The following are two examples of interactive visualization that I think are extremely well done and are very informative:
+
+  * [Cool Neural Network Playground](http://playground.tensorflow.org/)  
+  * [Stitch Fix Algorithm Tour](http://algorithms-tour.stitchfix.com/#data-platform)  
